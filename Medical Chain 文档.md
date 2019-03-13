@@ -35,3 +35,15 @@ grammar_cjkRuby: true
 
 * 执行 `java -jar MedicalChain-MPBFT-1.0-SNAPSHOT.jar  -v node1.json`启动`Validator`
 * 执行 `java -jar MedicalChain-MPBFT-1.0-SNAPSHOT.jar  -t node1.json`在节点1上启动`Transaction Transmitter`
+
+5. mongodb dump 命令
+
+```
+mongoexport -d BlockChain -c 129.204.52.140:8000.CommitMsgCount -o export --type json -u blockchain -p zc-12332145
+
+```
+关闭mongodb打印的方法
+```
+Logger log = Logger.getLogger("org.mongodb.driver");   
+log.setLevel(Level.OFF);   
+```
