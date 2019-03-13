@@ -30,3 +30,8 @@ grammar_cjkRuby: true
 
 * `privateKey.txt`和`publicKey.txt`可以在`MedicalChain-MPBFT\src\main\resources\`中找到
 * `MedicalChain-MPBFT-1.0-SNAPSHOT.jar`由`maven build` 生成
+
+4. 系统启动流程
+
+* 执行 `java -jar MedicalChain-MPBFT-1.0-SNAPSHOT.jar  -v node1.json`启动`Validator`
+* 执行 `java -jar MedicalChain-MPBFT-1.0-SNAPSHOT.jar  -t node1.json`在节点1上启动`Transaction Transmitter`
