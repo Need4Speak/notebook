@@ -1,12 +1,12 @@
 ---
 title: Medical Chain 文档 
-tags: 新建,模板,小书匠
+tags:文档,配置,运行
 grammar_cjkRuby: true
 ---
 
 
 1. build项目jar包：
-	`mvn -Dmaven.test.skip=true  assembly:assembly`
+* 在`MedicalChain-MPBFT\`目录下执行`mvn -Dmaven.test.skip=true  assembly:assembly`命令，将会在`MedicalChain-MPBFT\target`下生成`MedicalChain-MPBFT-1.0-SNAPSHOT.jar`。
 	
 2. 自动生成json配置文件的方法
 * 打开`MedicalChain-MPBFT\src\test\com\pancake\util\RunUtil.java`
@@ -29,3 +29,4 @@ grammar_cjkRuby: true
 ![节点所需文件](./images/1552459908725.png)
 
 * `privateKey.txt`和`publicKey.txt`可以在`MedicalChain-MPBFT\src\main\resources\`中找到
+* `MedicalChain-MPBFT-1.0-SNAPSHOT.jar`由`maven build` 生成
