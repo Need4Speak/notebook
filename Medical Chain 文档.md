@@ -21,3 +21,11 @@ grammar_cjkRuby: true
     }
 ```
 * 运行`generateConfigFile()`函数，生成四个配置文件，路径为`MedicalChain-MPBFT\nodeX.json`
+
+3. 节点环境配置
+
+* 每台机器所需的文件如下：
+
+![节点所需文件](./images/1552459908725.png)
+
+* `privateKey.txt`和`publicKey.txt`可以在`MedicalChain-MPBFT\src\main\resources\`中找到
