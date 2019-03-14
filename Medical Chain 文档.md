@@ -68,3 +68,8 @@ log.setLevel(Level.OFF);
 * 添加项目引用 jar 包，在MedicalChain-PBFT处右击，选择`Put into Output Root`，否则会出现`java.lang.ClassNotFoundException: org.springframework.web.context.ContextLoaderListener`错误
 
 ![enter description here](./images/1552554123112.png)
+
+* 添加 tomcat 服务器
+
+![configuration](./images/1552554345868.png)
+![添加tomcat](./images/1552554376580.png)
