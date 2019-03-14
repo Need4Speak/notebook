@@ -47,3 +47,16 @@ mongoexport -d BlockChain -c 129.204.52.140:8000.CommitMsgCount -o export --type
 Logger log = Logger.getLogger("org.mongodb.driver");   
 log.setLevel(Level.OFF);   
 ```
+6. MedicalChain Web 配置
+* 打开 project structure
+* 设置 jdk
+
+![jdk 设置](./images/1552553574766.png)
+
+*  添加 spring
+
+![spring 设置](./images/1552553642049.png)
+
+*  添加 web，2处填`D:\work\IdeaProjects\MedicalChain-PBFT\src\main\webapp\WEB-INF\web.xml`,3处填`D:\work\IdeaProjects\MedicalChain-PBFT\src\main\webapp`。注意`D:\work\IdeaProjects\`为项目所在目录。
+
+![Web设置](./images/1552553797869.png)
