@@ -59,4 +59,12 @@ log.setLevel(Level.OFF);
 
 *  添加 web，2处填`D:\work\IdeaProjects\MedicalChain-PBFT\src\main\webapp\WEB-INF\web.xml`,3处填`D:\work\IdeaProjects\MedicalChain-PBFT\src\main\webapp`。注意`D:\work\IdeaProjects\`为项目所在目录。
 
-![Web设置](./images/1552553797869.png)
+![Web 设置](./images/1552553797869.png)
+
+* 创建 Artifacts
+
+![Artifacts 设置](./images/1552554038643.png)
+
+* 添加项目引用 jar 包，在MedicalChain-PBFT处右击，选择`Put into Output Root`，否则会出现`java.lang.ClassNotFoundException: org.springframework.web.context.ContextLoaderListener`错误
+
+![enter description here](./images/1552554123112.png)
