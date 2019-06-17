@@ -1,6 +1,6 @@
 ---
 title: Medical Chain 文档 
-tags:文档,配置,运行
+tags:文档,配置,运行  mvn -Dmaven.test.skip=true  assembly:assembly
 grammar_cjkRuby: true
 ---
 
