@@ -76,6 +76,7 @@ log.setLevel(Level.OFF);
 
 7.开启mongo身份认证
 '''
+
 mongo	
 > use admin	# 创建admin数据库
 > db.createUser({user:"admin",pwd:"admin",roles:["root"]}) # 创建一个用户名为admin，密码为admin，身份为管理员的User
