@@ -77,31 +77,31 @@ log.setLevel(Level.OFF);
 7.开启mongo身份认证
 '''
 
-mongo	
-> use admin	# 创建admin数据库
-> db.createUser({user:"admin",pwd:"admin",roles:["root"]}) # 创建一个用户名为admin，密码为admin，身份为管理员的User
-> db.auth("admin","admin") # 进行认证
-1		# 显示1，认证成功
+	mongo	
+	> use admin	# 创建admin数据库
+	> db.createUser({user:"admin",pwd:"admin",roles:["root"]}) # 创建一个用户名为admin，密码为admin，身份为管理员的User
+	> db.auth("admin","admin") # 进行认证
+	1		# 显示1，认证成功
 
-> use demo1 # 切换数据库
-switched to db demo1
+	> use demo1 # 切换数据库
+	switched to db BlockChain
 
- # 创建一个用户名为demo1user，密码为demo1，身份为数据库用户，拥有demo1的User
-> db.createUser({user:"demo1user",pwd:"demo1",roles:[{role:"dbOwner",db:"demo1"}]})
-Successfully added user: {
-	"user" : "demo1user",
-	"roles" : [
-		{
-			"role" : "dbOwner",
-			"db" : "demo1"
-		}
-	]
-}
+	 # 创建一个用户名为demo1user，密码为demo1，身份为数据库用户，拥有demo1的User
+	> db.createUser({user:"blockchain",pwd:"zc-12332145",roles:[{role:"dbOwner",db:"BlockChain"}]})
+	Successfully added user: {
+		"user" : "demo1user",
+		"roles" : [
+			{
+				"role" : "dbOwner",
+				"db" : "demo1"
+			}
+		]
+	}
 
-sudo mongod -f /etc/mongod.conf --auth # 认证模式启动
+	sudo mongod -f /etc/mongod.conf --auth # 认证模式启动
 
-/etc/mongod.conf
-security:
-  authorization: enabled
+	/etc/mongod.conf
+	security:
+	  authorization: enabled
 
 '''
